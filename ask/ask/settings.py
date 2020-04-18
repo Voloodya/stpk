@@ -25,7 +25,7 @@ SECRET_KEY = '!wwtqu#hfn)9ks_d$tb1k03wuu%!zi+61%noq@r)@drfs($(az'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
