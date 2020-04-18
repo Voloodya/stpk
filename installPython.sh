@@ -21,7 +21,7 @@ ls /usr/bin/python*
 
 echo "Обновите список альтернатив Python для каждой версии, которую вы хотите использовать. В нашем случае это /usr/bin/python2.7 и /usr/bin/python3.5 версии:"
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
-sud  update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
 
 #echo "Создаем переменную окружения"
 #virtualenv -p "$PYTHON_PATH" web_study 2> /dev/null
