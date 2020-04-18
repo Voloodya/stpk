@@ -18,6 +18,7 @@ from django.urls import path
 from django.conf.urls import url, include
 
 urlpatterns = [
-	path('admin/', admin.site.urls),
-	url(r'^$', include('qa.urls')),
+	#path(r'^admin/', admin.site.urls),
+	url(r'^question/$', include('qa.urls')),
+	#url(r'^$', not_found),
 ]
