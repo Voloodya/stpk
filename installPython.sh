@@ -15,7 +15,15 @@ else
 fi
 echo "Путь к python3: $PYTHON_PATH"
 
-echo "Создаем переменную окружения"
-virtualenv -p "$PYTHON_PATH" web_study 2> /dev/null
-echo $VIRTUAL_ENV
-source web_study/bin/activate
+echo "Все доступные опции:"
+ls /usr/bin/python*
+/usr/bin/python  /usr/bin/python2  /usr/bin/python2.7  /usr/bin/python3  /usr/bin/python3.5  /usr/bin/python3.5m  /usr/bin/python3m
+
+echo "Обновите список альтернатив Python для каждой версии, которую вы хотите использовать. В нашем случае это /usr/bin/python2.7 и /usr/bin/python3.5 версии:"
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+sud  update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
+
+#echo "Создаем переменную окружения"
+#virtualenv -p "$PYTHON_PATH" web_study 2> /dev/null
+#echo $VIRTUAL_ENV
+#source web_study/bin/activate
