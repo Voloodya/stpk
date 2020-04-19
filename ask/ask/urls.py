@@ -19,6 +19,13 @@ from django.conf.urls import url, include
 
 urlpatterns = [
 	#path(r'^admin/', admin.site.urls),
+	url(r'^admin/', admin.site.urls),
 	url(r'^$', include('qa.urls')),
-	#url(r'^$', not_found),
+	url(r'^login/', include('qa.urls')),
+	url(r'^signup/',include('qa.urls')),
+	url(r'^ask/',include('qa.urls')),
+	# url(r'^answer/', answer),
+	url(r'^popular/', include('qa.urls')),
+	url(r'^new/', include('qa.urls')),
+	url(r'^question/', include('qa.urls')),
 ]
